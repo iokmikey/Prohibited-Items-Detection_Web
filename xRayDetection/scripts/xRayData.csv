@@ -1,0 +1,18 @@
+timestamp,confidence,label,filepath
+2023-09-01 06:52:19,0.22,Pliers,file2.txt
+2023-09-09 15:19:36,0.03,Knife,file4.txt
+2023-09-19 11:03:51,0.93,Knife,file5.txt
+2023-09-11 17:15:43,0.63,Pliers,file3.txt
+2023-09-01 11:17:46,0.61,Knife,file5.txt
+2023-09-27 02:34:54,0.01,Scissors,file4.txt
+2023-09-01 15:19:32,0.26,Pliers,file2.txt
+2023-09-07 10:05:28,0.24,Scissors,file1.txt
+2023-09-04 02:27:25,0.06,Wrench,file4.txt
+2023-09-14 23:50:36,0.84,Pliers,file5.txt
+2023-09-25 14:30:00,0.87,Knife,new_file.txt
+2023-09-25 14:30:00,0.87,Wrench,new_file.txt
+2023-09-25 14:30:00,0.87,Wrench,new_file.txt
+2023-09-25 14:30:00,0.87,Knife,new_file.txt
+2023-09-11 14:30:00,0.96,Gun,p976.jpg
+2023-09-11 14:30:00,0.96,Gun,p976.jpg
+2023-09-19 11:03:51,0.87,Wrench,P8765.jpg

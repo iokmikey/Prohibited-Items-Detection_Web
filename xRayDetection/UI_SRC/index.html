@@ -1,0 +1,561 @@
+﻿
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="robots" content="">
+<meta name="author" content="">
+<meta name="Content-Type" content="text/html; utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>index</title>
+
+<script type="text/javascript" src="js/echarts.min.js"></script>
+
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style_54.css">
+<link rel="stylesheet" href="css/ani.css">
+
+
+<style>
+
+
+
+
+/* 全部消失除了主页面 */
+/* .mainbox>li{ 
+	display: none; 
+} */
+
+
+
+
+</style>
+
+</head>
+<body>
+	
+
+
+
+	<!-- animation -->
+	<div class="ani">
+		<div class="ani_o">
+			<div class="ani_t" style="--i:0">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:1">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:2">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:3">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:1">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:2">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:3">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:4">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:2">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
+			<div class="ani_t" style="--i:3">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			
+			<div class="ani_t" style="--i:4">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:5">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:3">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:4">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:5">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="ani_t" style="--i:6">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="max_img" style="position: fixed;top: 0px;width: 100%;display: none;z-index: 20;">
+		<img src="" style="object-fit: contain;width:100%;margin: auto;display: block;height: 1080px;">
+		<div class="vi_back" style="z-index: 11;position: fixed;top: 0px;width: 100%;display: none;height:100%;box-shadow: inset -3px -2px 100px 3px rgba(255,0,0,.7),inset 3px 2px 100px 3px rgba(255,0,0,.7);"></div>
+		<span style="color: red;z-index: 50;position: absolute;top: 20px;right: 20px;color: #fff;font-weight: bold;font-size: 5vh;cursor: pointer;user-select: none;">
+			X
+		</span>
+	</div>
+
+	
+
+	<div class="head clearfix">
+		<div class="menu menu2 pulll_left">
+			<ul class="conversion">      
+				<li><a href="#" name="index" ip="1" style="color:  #f4e925">主界面</a></li>
+				<li><a href="#" name="settings" ip="2">设置</a></li>
+				<li><a href="#" name="statistics"  ip="3" >统计</a></li>
+				<li><a href="#" name="update" ip="4">更新维护</a></li>
+				<li><a href="#" name="help" ip="5">帮助</a></li>
+				
+					
+				
+			</ul>
+			</div>
+
+		<h1 class="pulll_left" >智能安检监控平台</h1>
+			
+			<div style="position: absolute;height: 40px;line-height: 40px;top: 25px;left: 66%;display: flex;justify-content: space-around;background: rgba(0,0,0,0);">
+				
+				模型选择：
+				<select id="selectElem">
+					<option selected="selected" disabled="disabled"  style='display: none' value=''></option>
+					<!-- <option value="123">123</option>
+					<option value="456">456</option> -->
+				  </select>
+				
+				</div>
+		
+			<div class="time" id="showTime">2018/6/12 17:00:12</div>
+		</div>
+
+	<ul class="mainbox">
+		<li name="index" >
+			<div>
+	
+				<ul class="clearfix nav1">
+					<li style="width: 22%">
+					<div class="box " style="">
+						<div class="lefttime"><h2 class="tith2" style="margin-top: 20px;">选中违禁物类别</h2>
+							<div class="lefttime_text" style="margin-top: 20px;">
+							<ul class='box_type' style="padding: 10px;">
+								<!-- <li>123</li>
+								<li>123</li>
+								<li>123</li>
+								<li>123</li> -->
+							</ul>
+							</div>
+						</div>
+		
+						</div>
+						<div class="box">
+						<div class="tit">当前违禁物品数量</div>
+						<div class="boxnav">
+							<div id="echart2" style="width: 430px;"></div>
+							
+							</div>
+						</div>
+					</li>
+					<li style="width: 56%">
+					
+					<div class="box box_center">
+						<div class="box_center_banner">
+							<ul>
+								<li></li>
+								<!-- <li><img src="./img/1.jpg" alt=""></li>
+								<li><img src="./img/2.jpg" alt=""></li>
+								<li><img src="./img/3.jpg" alt=""></li>
+								<li><img src="./img/4.jpg" alt=""></li> -->
+							</ul>
+						</div>
+						
+						<div class="jt">
+							<span class="box_center_left">&lt;</span>
+							<span class="box_center_right">&gt;</span>
+						</div>
+						
+					
+		
+						
+						</div>
+					<div class="box" >
+						<div class="tit">检测违禁品详情</div>
+						<div class="serviceForm"  style="height: 306px;">
+							
+							<div class="statusList">
+								<ul class="seTable" style="border-bottom: 1px solid #add3ff;">
+									<li>序号</li>
+									<li>名称</li>
+									<li>位置</li>
+									<li>置信度</li>
+									<li>时间</li>
+		
+								</ul>
+								
+							</div>
+							<div class="statusList">
+		
+							</div>
+						</div>
+		
+						</div>
+					</li>
+					<li style="width: 22%">
+					<div class="box ">
+						<div class="tit">违规物品记录图</div>
+						<div class="right_top ">
+							<!-- <img src="img/1.jpg" alt="">
+							<img src="img/2.jpg" alt="">
+							<img src="img/3.jpg" alt="">
+							<img src="img/4.jpg" alt=""> -->
+						</div>
+				
+						</div>
+		
+						<div class="mrbox_top_right box" style="overflow: hidden;">
+							<div class="hdrightboxtop"><h2 class="tith2" style="margin-bottom: 20px;font-size: 16px;">标记</h2>
+							
+							<div class="left2_table hdleft2_table" >
+								<div class="tds " style="position: relative;top:0">
+									<img src="" alt="">
+								
+								</div>
+							</div>
+						</div>
+				</div>
+		
+					</li>
+					</ul>
+			</div>
+
+
+		</li>
+
+		<li name="settings">
+			<div>
+				<ul class="clearfix nav1" style="">
+					<li style="width: 100%;">
+						<div class="box" >
+							<div class="lefttime"><h2 class="tith2" style="font-size: 18px;">选中违禁物类别</h2>
+								<div class="lefttime_text set_left" style="margin-top: 20px;padding-bottom: 20px;">
+								   <ul>
+									<!-- js有个清除的 -->
+									<!-- <li>1234</li>
+									<li>1234</li>
+									<li>1234</li>
+									<li>1234</li> -->
+								   </ul>
+								</div>
+							   </div>
+				
+							</div>
+		 
+						</li>
+				</ul>
+				<ul class="clearfix nav1" style="display: flex; justify-content: space-around;margin-top: 30px;">
+					<li style="width: 47%;">
+						<div class="box" >
+							<div class="tit">详情设置</div>
+							<div class="serviceForm">
+								<ul class="box_xq">
+						
+									<li class="back_color">
+										
+										<p>主题颜色：</p>
+										<!-- #081325 #174a9b  #1e69e0-->
+										<div class="zt_on" style="background: #081325;"></div>
+										<div class="zt_on" style="background: #1a222e;"> </div>
+										<div class="zt_on" style="background: #001b46;"></div>
+									</li>
+									<li></li>
+									<li>
+										
+										<p>线框粗细：</p>   
+										<input type="range" min="1" max="100" value="1" id="range">
+										<span class="range_span" style="margin-left: 5px;">1</span>
+									   
+									</li>
+									<li class="linear_color">
+										<p>线框颜色：</p>
+										<!-- 传  rgb颜色 -->
+										<!-- #081325 #174a9b  #1e69e0-->
+										<div class="zt_on" style="background: #ff0d0d;" cl="#ff0d0d;"></div>
+										<div style="background: #24ff1c;" cl="#24ff1c;"> </div>
+										<div style="background: #eeff05;" cl="#eeff05;"></div>
+									</li>
+									<li>
+										
+										<p>置信度：</p>   
+										<input type="range" min="0" max="100" value="50" id="confidence">
+										<span class="confidence_span" style="margin-left: 5px;">50</span>
+									   
+									</li>
+									<li>
+										
+										<p>准确度：</p>   
+										<input type="range" min="0" max="100" value="50" id="accuracy">
+										<span class="accuracy_span" style="margin-left: 5px;">50</span>
+									   
+									</li>
+									</ul>
+						 
+							</div>
+					 
+							</div>
+					</li>
+		
+					<li style="width: 47%;">
+						<div class="box" >
+							<div class="tit">设置示例</div>
+							<div class="serviceForm ser_sl" style="position: relative;">
+								<div class="ser" style="width: 100px;height: 200px;border: 1px solid red;position: absolute;top: 0;left: 0;"></div>
+								<img src="img/1.jpg" alt="">
+							</div>
+						</div>
+					</li>
+				</ul>
+		
+			</div>
+
+		</li>
+
+
+		<li name="statistics">
+			<div>
+				<ul class="clearfix nav1 mainbox_ul">
+				   <li style="width: 67%;">
+						
+						<div class="box">
+							<div class="box_time">
+								<input type="date" class="box box_times" style="" id="time_start">
+							-
+								<input type="date" class="box box_times" style="margin-left: 5px;" id="time_end">
+							</div>
+							
+							<div class="lefttime"><h2 class="tith2" style="">违禁物类别统计</h2>
+							<div class="allnav" id="echart1" ></div>
+							</div>
+						</div>
+				   </li>
+				   <li style="width: 30%;">
+					<div class="box">
+						<div class="lefttime"><h2 class="tith2" style="margin-top: 20px;">违禁物类别统计</h2>
+							<div class="allnav" id="echart3" style="margin-top: 10px;height: 400px;">
+				
+							</div>
+						</div>
+				   </li>
+				</ul>
+				<ul class="clearfix nav1 mainbox_ul" style="margin-top: 20px;">
+				<li style="width: 50%;">
+					<div class="box">
+						
+					</div>
+				</li>
+				<li style="width: 50%;">
+					<div class="box"></div>
+				</li>
+			   </ul>
+		
+			</div>
+
+		</li>
+
+		<li name="update">
+			<ul class="update_ul">
+				<div class="box box_update_le" style="">
+					<div class="tit">检测结果</div>
+					<div class="box_update_div">
+						<img src="" alt="">
+					</div>
+					<ul>
+						
+					</ul>
+				</div>
+				<div class="box_update_ce" style="">
+					<img src="./img/update_jt.png" alt="">
+					<li class="active update_button">传输</li>
+				</div>
+				<div class="box box_update_ri" style="">
+					<div class="tit">误检列表</div>
+					<div class="box_update_div">
+						<img src="" alt="">
+					</div>
+					<ul>
+						
+					</ul>
+				</div>
+			</ul>
+			<div class="box_update_button_jdt">
+				<ul>
+					<li >
+						<ul style="display: flex;justify-content: space-around;">
+							<li class="active update_button" id="jc_update" style="line-height: 75px;">检测更新 <span style="display: block;margin-top: -37px;">v1.0.0</span></li>
+							<li class="active update_button" id="bb_update">更新版本</li>
+						</ul>
+					</li>
+					<li style="display: flex;align-items: center;">
+						<div class="progress">
+							<div class="progress_load"></div>
+							
+						</div>
+						<span class="progress_load_result"></span>
+					</li>
+				</ul>
+			</div>
+
+
+		</li>
+
+
+		<li name="help">
+			<div id="pdf-container" style="width:1900px;height: 900px; overflow: auto;margin: auto;margin: 30px 0 0 56px;"></div>
+
+		</li>
+	</ul>
+
+
+
+
+		<script src="js/index.js"></script>
+		<script src="js/url.js"></script>
+	<!-- <script src="js/settings.js"></script>
+		<script src="js/statistics.js"></script>
+		  -->
+		
+		
+
+		
+		<script>
+
+		var tt = null;
+		tt = setTimeout(time,1000);//開始运行
+		function time()
+		{
+		clearTimeout(tt);//清除定时器
+		dt = new Date();
+			var y=dt.getFullYear();
+			var mt=dt.getMonth()+1;
+			var day=dt.getDate();
+		var h=dt.getHours();//获取时
+		var m=dt.getMinutes();//获取分
+		var s=dt.getSeconds();//获取秒
+		document.getElementById("showTime").innerHTML = y+"/"+mt+"/"+day+" "+h+":"+m+":"+s+"";
+		tt = setTimeout(time,1000); //设定定时器，循环运行     
+		} 
+		
+</script>
+	
+<!-- PDF展示 -->
+<script src="./js/pdfjs/build/pdf.js"></script>
+    <script>
+        const pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+        // 设置 worker 文件路径
+        pdfjsLib.GlobalWorkerOptions.workerSrc = './js/pdfjs/build/pdf.worker.js';
+
+        const pdfFile = './js/1.pdf';
+        const pdfContainer = document.getElementById('pdf-container');
+
+		let currentPage = 1; // 当前页码
+        let totalPages = 0; // PDF 总页数
+
+        function renderPage(pageNum) {
+            pdfjsLib.getDocument(pdfFile).promise.then(function(pdf) {
+                totalPages = pdf.numPages; // 获取总页数
+                pdf.getPage(pageNum).then(function(page) {
+                    const scale = 1.5;
+                    const viewport = page.getViewport({ scale: scale });
+
+                    const canvas = document.createElement('canvas');
+                    const context = canvas.getContext('2d');
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+                    pdfContainer.appendChild(canvas);
+
+                    page.render({ canvasContext: context, viewport: viewport });
+                });
+            });
+        }
+
+        // 初始渲染第一页
+        renderPage(currentPage);
+
+        pdfContainer.addEventListener('scroll', function() {
+            // 计算当前可视区域的位置
+            const container = pdfContainer;
+            const scrollTop = container.scrollTop;
+            const pageHeight = container.scrollHeight / totalPages;
+            const newPage = Math.floor(scrollTop / pageHeight) + 1;
+
+            // 如果滚动到新页，加载并渲染该页
+            if (newPage !== currentPage) {
+                currentPage = newPage;
+                renderPage(currentPage);
+            }
+        });
+		renderPage(2);
+
+        pdfContainer.addEventListener('scroll', function() {
+            // 计算当前可视区域的位置
+            const container = pdfContainer;
+            const scrollTop = container.scrollTop;
+            const pageHeight = container.scrollHeight / totalPages;
+            const newPage = Math.floor(scrollTop / pageHeight) + 1;
+
+            // 如果滚动到新页，加载并渲染该页
+            if (newPage !== currentPage) {
+                currentPage = newPage;
+                renderPage(currentPage);
+            }
+        });
+    </script>
+
+</body>
+</html>

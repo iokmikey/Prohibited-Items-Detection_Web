@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "/home/wxxz/Libs/onnxruntime/onnxruntime-linux-x64-gpu-1.14.1/include",
+                "/usr/local/include/opencv4"
+            ],
+            "defines": []
+        }
+    ],
+    "version": 4
+}

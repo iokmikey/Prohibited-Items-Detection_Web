@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/include",
+                "/home/wxxz/libs/onnxruntime/include",
+                //"${workspaceFolder}/build/XRayDetection_autogen/include",
+                "/usr/include/opencv4/"
+                
+            ],
+            "defines": []
+        }
+    ],
+    "version": 4
+}

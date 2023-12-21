@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "/home/wxxz/tools/Qt5.14.2/5.14.2/gcc_64/include/QtWidgets",
+                "/home/wxxz/tools/Qt5.14.2/5.14.2/gcc_64/include/QtWebEngineWidgets",
+                "/home/wxxz/tools/Qt5.14.2/5.14.2/gcc_64/include/QtCore"
+            ],
+            "defines": []
+        }
+    ],
+    "version": 4
+}

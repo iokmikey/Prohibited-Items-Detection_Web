@@ -1,0 +1,7 @@
+
+
+
+主要在xRayDetection里面UI_SRC为存放前端代码（替换即可）,   src -> Communications ->都是后端代码
+
+
+运行需要  打开xRayDetection里面build   运行以下 代码   make -j4为编译在build里面（如修改了后端代码）    ./XR...   为运行整个项目        ip:7899
